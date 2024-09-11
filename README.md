@@ -1,7 +1,14 @@
 Full-Stack E-commerce Project
 This is a full-stack e-commerce project built with [list the technologies used, e.g., React, Node.js, Express, MongoDB]. The project consists of a frontend, backend, and admin panel.
 
- 
+
+Prerequisites
+
+Node.js (version 14 or higher)
+npm (version 6 or higher)
+MongoDB (version 4 or higher)
+
+
 Getting Started
 To view and run the project, follow these steps:
 
@@ -25,13 +32,6 @@ Admin Panel
 Navigate to the admin-panel folder in the repository.
 Run the command npm run dev to start the admin panel server.
 Open a web browser and navigate to http://localhost:5173 to view the admin panel.
-
-
-Prerequisites
-
-Node.js (version 14 or higher)
-npm (version 6 or higher)
-MongoDB (version 4 or higher)
 
 
 Dependencies

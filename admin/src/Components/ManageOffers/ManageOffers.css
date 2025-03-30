@@ -1,0 +1,154 @@
+.manage-offers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 900px;
+    margin: auto;
+    padding: 30px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 25px;
+    font-size: 24px;
+}
+
+.add-offer-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.add-offer-form input {
+    flex: 1;
+    min-width: 150px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 40px;
+}
+
+.add-offer-form button {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.add-offer-form button:hover {
+    background-color: #218838;
+    opacity: 0.9;
+}
+
+/* Error Message Styling */
+.error {
+    color: red;
+    font-size: 14px;
+}
+
+.offers-table-container {
+    width: 100%;
+    overflow-x: auto;  /* Prevent table overflow on small screens */
+}
+
+.offers-table {
+    display: grid;
+    gap: 10px;
+}
+
+.offers-table-header,
+.offers-table-row {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 10px;
+    text-align: center;
+}
+
+.offers-table-header {
+    font-weight: bold;
+    background-color: #f8f8f8;
+    border-radius: 4px;
+}
+
+.offer-actions button {
+    margin-right: 5px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.offer-actions button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design for Tablets (768px and below) */
+@media (max-width: 768px) {
+    .offers-table-header,
+    .offers-table-row {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .add-offer-form input {
+        width: 100%;
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .add-offer-form button {
+        width: 100%;  /* Full width button on smaller screens */
+        text-align: center;
+    }
+}
+
+/* Responsive Design for Mobile Screens (600px and below) */
+@media (max-width: 600px) {
+    .offers-table-header,
+    .offers-table-row {
+        grid-template-columns: repeat(4, 1fr);  /* Simplified grid on smaller screens */
+    }
+
+    .add-offer-form input {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .add-offer-form button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .offer-actions button {
+        padding: 6px 8px;
+        font-size: 12px;
+    }
+
+    .manage-offers {
+        padding: 20px;
+    }
+}
+
+/* Action Buttons in Offer Table */
+button {
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Add Hover Effects (for all buttons) */
+button:hover {
+    opacity: 0.8;
+}

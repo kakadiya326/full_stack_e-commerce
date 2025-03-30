@@ -1,0 +1,70 @@
+.my-profile-container {
+  width: 50%;
+  margin: 50px auto; /* Centers horizontally and adds top & bottom margin */
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: #fff;
+}
+
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center; /* Centers content inside */
+}
+
+.profile-photo-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ddd;
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  width: 80%; /* Makes inputs look better */
+  gap: 10px;
+}
+
+.profile-details label {
+  font-weight: bold;
+  text-align: left;
+  width: 100%;
+}
+
+.profile-details input {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.update-button {
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #ea452f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 50%;
+}
+
+.update-button:hover {
+  background-color: #3a62db;
+}

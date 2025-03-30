@@ -5,6 +5,22 @@
     box-shadow: 0 1px 3px -2px black;
     align-items: center;
 }
+.auth-button {
+    width: 130px !important;  
+    height: 45px !important;  
+    font-size: 15px !important;  
+    border-radius: 5px !important;  
+    border: 1px solid #ccc !important;  
+    background-color: #f8f8f8 !important;  
+    cursor: pointer !important;  
+    transition: background 0.3s !important;
+}
+
+
+.auth-button:hover {
+    background-color: #e0e0e0;
+}
+
 
 .nav-logo {
     display: flex;
@@ -23,7 +39,7 @@
     align-items: center;
     list-style: none;
     gap: 50px;
-    color: #62626262;
+    color: #626262;
     font-size: 20px;
     font-weight: 500;
 }
@@ -68,24 +84,53 @@
     background-color: #f3f3f3;
 }
 
+.nav-cart-container {
+    position: relative;
+    display: inline-block;
+}
+
+.nav-cart-icon {
+    width: 40px; /* Adjust size as needed */
+    height: auto;
+}
+
 .nav-cart-count {
-    width: 22px;
-    height: 22px;
+    position: absolute;
+    top: -5px; /* Adjust to place it at the top */
+    right: -5px; /* Adjust to place it at the right */
+    width: 20px;
+    height: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -35px;
-    margin-left: -55px;
-    border-radius: 11px;
-    font-size: 14px;
+    border-radius: 50%;
+    font-size: 12px;
     background: red;
     color: white;
+    font-weight: bold;
 }
+
 
 .nav-dropdown {
     display: none;
 }
 
+/* Profile Picture */
+.nav-profile-icon {
+    width: 50px;  /* Smaller default size */
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    object-fit: cover;
+    transition: transform 0.2s ease-in-out;
+    border: 2px solid #ddd; /* Optional subtle border */
+}
+
+.nav-profile-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive Styles */
 @media (max-width: 1280px) {
     .navbar {
         padding: 12px 50px;
@@ -96,7 +141,6 @@
     }
 
     .nav-logo p {
-
         font-size: 25px;
     }
 
@@ -145,6 +189,11 @@
         width: 18px;
         height: 18px;
     }
+
+    .nav-profile-icon {
+        width: 28px;
+        height: 28px;
+    }
 }
 
 @media (max-width: 800px) {
@@ -176,6 +225,11 @@
     .nav-dropdown.open {
         transform: rotate(90deg);
     }
+
+    .nav-profile-icon {
+        width: 25px;
+        height: 25px;
+    }
 }
 
 @media (max-width: 500px) {
@@ -195,5 +249,10 @@
 
     .nav-login-cart {
         transform: scale(0.8);
+    }
+
+    .nav-profile-icon {
+        width: 22px;
+        height: 22px;
     }
 }
